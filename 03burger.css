@@ -14,6 +14,7 @@
 
 .container {
     width: 1450px;
+    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -46,10 +47,12 @@ a {
 
 .row {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .col-50 {
     width: 50%;
+    /* width: 100%; */
 }
 
 .txt {
@@ -116,11 +119,13 @@ h1 {
 
 .row {
     display: flex;
+    /* flex-wrap: wrap; */
     /* padding: 0px 0px 0px 100px; */
 }
 
 .col-33 {
     width: 33.33%;
+    /* width: 100%; */
 }
 
 .circle {
@@ -168,10 +173,12 @@ h1 {
 
 .row {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .col-50 {
     width: 50%;
+    /* width: 100%; */
 }
 
 .im1 {
@@ -511,6 +518,7 @@ h1 {
 
 .col-33 {
     width: 33.33%;
+    /* width: 100%; */
 }
 
 .me {
@@ -543,3 +551,32 @@ h1 {
     font-size: 20px;
     line-height: 38px;
 }
+
+
+
+
+
+
+/* Meadia quary start here */
+
+
+@media (min-width: 576px) {
+    .container {
+        /* width: 520px; */
+    }
+
+    .col-50 {
+        /* width: 100%; */
+    }
+
+    .col-33 {
+        /* width: 100%; */
+    }
+}
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
