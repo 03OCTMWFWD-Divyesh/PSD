@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 
+/* Header start Here */
+
 /* #hed {
-    background: url(../Image/virat_kohli_2.jpg) no-repeat center center/cover;
+    background: url(../Image/vk20.jpg) no-repeat center center/cover;
 } */
 
 .hed-wr {
-    background-color: aqua;
+    background-color: white;
+    /* height: 712px; */
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -32,6 +35,11 @@
 .logo span {
     color: red;
 }
+
+/* div .logo,
+span {
+    color: oldlace;
+} */
 
 .navlist {
     display: flex;
@@ -55,15 +63,15 @@ a {
     text-decoration: none;
 }
 
-button {
+.navlist button {
     font-size: 20px;
     color: black;
-    border-radius: 40px;
+    border-radius: 35px;
     padding: 10px 15px 10px 15px;
-    background-color: orangered;
+    background-color: aqua;
 }
 
-button:hover{
+.navlist button:hover {
     color: red;
     background-color: black;
 }
@@ -72,43 +80,128 @@ button:hover{
 /* Hamburger menu start :- */
 
 
-.hamburger{
+.hamburger {
     font-size: 25px;
     display: none;
 }
 
-#hide{
+#hide {
     display: none;
 }
+
+
+/* Section  1 start Here */
+
+.row {
+    display: flex;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.text {
+    margin: 200px 0px 0px 0px;
+}
+
+.text h3 {
+    font-size: 47px;
+}
+.text h3 span{
+    color: red;
+}
+
+.text h2 {
+    font-size: 80px;
+    margin: 20px 0px 0px 0px;
+    position: relative;
+}
+
+.text h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    animation: animate 4s steps(20) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.text p {
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.text span button {
+    margin: 50px 15px 0px 0px;
+    font-size: 20px;
+    color: black;
+    border-radius: 30px;
+    padding: 15px 15px 15px 15px;
+    background-color: cornflowerblue;
+}
+
+.btn1 {
+    padding: 15px 20px 15px 20px;
+}
+
+.text span button:hover {
+    color: red;
+    background-color: black;
+}
+
+.img {
+    position: absolute;
+    margin: 30px 0px 0px 18px;
+}
+
+
+
 
 
 
 /* Meadia query */
 
-@media (min-width: 576px){
-    .hamburger{
+@media (min-width: 576px) {
+    .hamburger {
         display: block;
     }
-    .navlist{
+
+    .navlist {
         display: none;
     }
 }
 
-@media (min-width: 768px){
-    .hamburger{
+@media (min-width: 768px) {
+    .hamburger {
         display: block;
     }
-    .navlist{
+
+    .navlist {
         display: none;
     }
 }
 
 
-@media (min-width: 992px){
-    .hamburger{
+@media (min-width: 992px) {
+    .hamburger {
         display: none;
     }
-    .navlist{
+
+    .navlist {
         display: flex;
     }
 }
